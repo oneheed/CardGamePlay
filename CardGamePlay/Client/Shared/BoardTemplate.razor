@@ -1,0 +1,44 @@
+﻿<div class="row" style="padding: 5px 0px;">
+    <div class="col-1">
+        @Board
+    </div>
+    <div class="col-10">
+            @for (var i = 0; i < 2; i++)
+            {
+                <div class="row">
+                    @for (var j = 0; j < 18; j++)
+                    {
+                        var index = Board * 18 + 2 * j + i;
+
+                        <div class="col">
+                            <img src="/Resours/@(Cards[index]).png" />
+                        </div>
+                    }
+                </div>
+            }
+
+        <div class="row">
+            @for (var i = 0; i < 16; i++)
+            {
+                <div class="col">
+                    <img src="/Resours/@(PlayerCards[i]).png" />
+                </div> 
+            }           
+            <div class="col"> </div>
+            <div class="col"> </div>
+        </div>
+    </div>
+    <div class="col-1">
+    </div>
+</div>
+
+@code { 
+    [Parameter]
+    public int Board { get; set; }
+
+    [Parameter]
+    public List<int> Cards { get; set; }
+
+    [Parameter]
+    public List<int> PlayerCards { get; set; }
+}

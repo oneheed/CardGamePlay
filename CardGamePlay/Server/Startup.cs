@@ -1,7 +1,7 @@
-using System.Linq;
+﻿using CardGamePlay.Shared.GameServices;
+using CardGamePlay.Shared.Interfaces;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.ResponseCompression;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
@@ -21,6 +21,8 @@ namespace CardGamePlay.Server
         // For more information on how to configure your application, visit https://go.microsoft.com/fwlink/?LinkID=398940
         public void ConfigureServices(IServiceCollection services)
         {
+
+            services.AddSingleton<IGameplay, MaJiangGameService>();
 
             services.AddControllersWithViews();
             services.AddRazorPages();

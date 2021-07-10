@@ -1,0 +1,35 @@
+﻿@page "/majiang"
+
+@inject HttpClient Http
+
+@if (cards == null)
+{
+<p><em>Loading...</em></p> }
+else
+{
+<div class="container">
+    <BoardTemplate Board="0" Cards="@cards[0]" PlayerCards="cards[1]" />
+    <BoardTemplate Board="1" Cards="@cards[0]" PlayerCards="cards[2]" />
+    <BoardTemplate Board="2" Cards="@cards[0]" PlayerCards="cards[3]" />
+    <BoardTemplate Board="3" Cards="@cards[0]" PlayerCards="cards[4]" />
+</div>}
+
+<style type="text/css">
+    .col {
+        padding: 0px;
+    }
+
+    img {
+        max-width: 100%;
+    }
+</style>
+
+
+@code { private List<List<int>> cards;
+
+    protected override async Task OnInitializedAsync()
+    {
+        cards = await Http.GetFromJsonAsync<List<List<int>>>("GamePlay/Draw");
+
+        Console.WriteLine(cards[0][0]);
+    } }

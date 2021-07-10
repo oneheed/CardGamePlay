@@ -2,6 +2,8 @@
 {
     public interface IGameplay
     {
-        public int[] Shuffle(int[] cards, int times = 1);
+        int[] Shuffle(int times = 1);
+
+        int[][] Draw(int[] cards, int user);
     }
 }
