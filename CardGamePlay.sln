@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31424.327
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CardGamePlay.Server", "CardGamePlay\Server\CardGamePlay.Server.csproj", "{B671E30E-13E4-4BA6-8B95-B1EFCCEFB124}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CardGamePlay.Client", "CardGamePlay\Client\CardGamePlay.Client.csproj", "{BFE57A39-8265-4784-9377-A98D0FB2B2FC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CardGamePlay.Shared", "CardGamePlay\Shared\CardGamePlay.Shared.csproj", "{A1BBA78B-274E-4383-B8FE-4F4C5B40C684}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B671E30E-13E4-4BA6-8B95-B1EFCCEFB124}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B671E30E-13E4-4BA6-8B95-B1EFCCEFB124}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B671E30E-13E4-4BA6-8B95-B1EFCCEFB124}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B671E30E-13E4-4BA6-8B95-B1EFCCEFB124}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BFE57A39-8265-4784-9377-A98D0FB2B2FC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BFE57A39-8265-4784-9377-A98D0FB2B2FC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BFE57A39-8265-4784-9377-A98D0FB2B2FC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BFE57A39-8265-4784-9377-A98D0FB2B2FC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A1BBA78B-274E-4383-B8FE-4F4C5B40C684}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A1BBA78B-274E-4383-B8FE-4F4C5B40C684}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A1BBA78B-274E-4383-B8FE-4F4C5B40C684}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A1BBA78B-274E-4383-B8FE-4F4C5B40C684}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8EB53494-DF23-403D-85B3-E92EAF3D891F}
+	EndGlobalSection
+EndGlobal
